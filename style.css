@@ -1,0 +1,114 @@
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #f6f5ff;
+}
+#my-picture img {
+  border-radius: 50%;
+  border: 4px solid rgb(203, 192, 202);
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+#my-button:hover {
+  background-color: rgb(231, 211, 229);
+}
+#my-button {
+  margin-top: 0.6rem;
+  margin-left: 2.6rem;
+}
+#content {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  margin-top: 1.6rem;
+}
+#side-menu {
+  flex: 2;
+  margin-left: 1.6rem;
+}
+#main {
+  flex: 3;
+}
+#header-wraper {
+  display: flex;
+  flex-direction: row;
+}
+#header-info {
+  flex: 1;
+}
+h1 {
+  margin-top: 30px;
+  margin-bottom: 0;
+  padding: 20px;
+  color: rgb(159, 150, 158);
+}
+h2 {
+  margin: 4px 10px;
+  color: rgb(67, 57, 67);
+}
+p {
+  color: blueviolet;
+}
+li {
+  font-style: normal;
+  font-weight: bold;
+}
+/*whatever comment */
+
+#motto {
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 0rem;
+  color: rgb(247, 34, 208);
+}
+#motto span {
+  font-weight: bold;
+}
+.favorite {
+  font-weight: bold;
+  color: rgb(3, 144, 33);
+}
+
+#top-menu-bar {
+  text-align: center;
+  background-color: rgb(206, 52, 178);
+  color: #fff;
+}
+#top-menu-bar li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+#top-menu-bar a {
+  text-decoration: none;
+  padding: 0 15px;
+  color: #fff;
+}
+#top-menu-bar a:visited {
+  color: #fff;
+}
+#top-menu-bar a:hover {
+  color: rgb(206, 52, 178);
+  background: #fff;
+  transition: 0.5s;
+  border-radius: 00.5rem;
+  padding-bottom: 0.1em;
+}
+.page {
+  background: #fff;
+  border-radius: 0.8rem;
+  margin-bottom: 1.6rem;
+  margin-right: 1.6rem;
+  margin-left: 1.6rem;
+  box-shadow: 0 4px 8px rgb(151 127 200 / 9%);
+  padding: 1.6rem;
+}
+.page h2 {
+  margin-top: 0;
+}
