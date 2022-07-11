@@ -31,54 +31,107 @@
     <section id="content">
       <div id="side-menu">
         <section>
+          <h2>Contact Form</h2>
           <form action="" method="get">
-            <label for="userEmail">Email</label>
+            <div class="form-row">
 
-            <input
+            
+             <label for="userEmail">Email</label>
+
+             <input
               type="email"
               name="email"
               id="userEmail"
-              placeholder="example@gmail.com"
-            />
+              placeholder="example@gmail.com" />
+           </div>
+            <label for="contactName">Name</label>
+              
+            <input type="text"
+                    id="contactName"
+                    name="name"
+                    placeholder="YourName"/>
             <button id="my-button" type="submit">Contact me</button>
           </form>
         </section>
-        <section>Hobbies</section>
+        <section>...</section>
       </div>
       <div id="main">
         <div class="page">
           <h2>Skills</h2>
           <ul>
             <li class="favorite">html</li>
-            <li>css</li>
-            <li style="font-weight: bold; color: rgb(197, 10, 10)">js</li>
+            <li class="favorite">css</li>
+            <li>js</li>
           </ul>
         </div>
 
-        <div class="page">
+        <div id="languages" class="page" style=>
           <h2>Known Languages</h2>
-          <table border="1">
-            <tr>
-              <td>Romanian</td>
-              <td>Native</td>
-            </tr>
-            <tr>
-              <td>German</td>
-              <td>Advanced</td>
-            </tr>
-            <tr>
-              <td>English</td>
-              <td>Good</td>
-            </tr>
-          </table>
+          
+            <table>
+              <tr>
+                <th>Language</th>
+                <th>Level</th>
+              </tr>  
+
+              <tr>
+                <td>Romanian</td>
+                <td>Native proficiency</td>
+              </tr>
+              <tr>
+               <td>English</td>
+               <td>Professional working proficiency</td>
+              </tr>
+              <tr>
+                <td>German</td>
+                <td>Professional working proficiency</td>
+              </tr>
+            </table>
+        
+          </div>
+
+        <div class="page">
+          <h2>Projects</h2>
+          <div>
+            <p>
+              Work in progress ...
+            </p> 
+          </div>
+        </div>
+
+        <div class="page">
+          <h2>Home</h2>
+          <h3 class="title">About</h3>
+          <div>
+            <p>
+              Hi I'm Dana and I am passionate about all 
+              things beautiful and crafty.
+            </p>
+            <p>
+              My strongest point is creativity and my biggest pleasure 
+             is to create and design new things.
+             Since early age I have been passionate about art.
+             I have studied art in college which broadened up my horizons and 
+             developed my taste for beauty.
+             <br> My love for aesthetique,
+            creativity and daintiness is very well reflected in all I do.
+            </p>
+ 
+            
+          </div>
         </div>
       </div>
     </section>
     <footer>
-      <p style="text-align: center">
-        <a href="https://github.com/nmatei">GitHub</a>
-        2022
+      <p style="text-align: center;"  >
+        <a target="_blank" href="https://github.com/vlasdana">GitHub</a>
+         | 
+        <a target="_blank" href="https://www.linkedin.com/in/dana-vlas-141b2a244/">LinkedIn</a>
       </p>
+      <p id="Year">2022
+      </p>
+     
+     
     </footer>
 
     <script src="index.js"></script>
