@@ -23,6 +23,8 @@ mottoElement.innerHTML += " & " + jobTitle;
 function showHomePage() {
   document.getElementById("home").style.display = "block";
   document.getElementById("skills").style.display = "none";
+  document.getElementById("projects").style.display = "none";
+  document.getElementById("languages").style.display = "none";
 }
 
 function showSkillsPage() {
@@ -30,16 +32,21 @@ function showSkillsPage() {
   document.getElementById("home").style.display = "none";
   document.getElementById("projects").style.display = "none";
   document.getElementById("skills").style.display = "block";
+  document.getElementById("languages").style.display = "none";
+  document.getElementById("home").style.display = "none";
 }
 
 function showProjectsPage() {
   document.getElementById("skills").style.display = "none";
+  document.getElementById("home").style.display = "none";
   document.getElementById("languages").style.display = "none";
   document.getElementById("projects").style.display = "block";
 }
 function showLanguagesPage() {
   document.getElementById("projects").style.display = "none";
   document.getElementById("languages").style.display = "block";
+  document.getElementById("home").style.display = "none";
+  document.getElementById("skills").style.display = "none";
 }
 
 showHomePage();
