@@ -21,10 +21,10 @@
       </div>
 
       <ul id="top-menu-bar">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Languages</a></li>
+        <li><a href="#" onclick="showHomePage()">Home</a></li>
+        <li><a href="#" onclick="showSkillsPage()">Skills</a></li>
+        <li><a href="#" onclick="showProjectsPage()">Projects</a></li>
+        <li><a href="#" onclick="showLanguagesPage()">Languages</a></li>
       </ul>
     </header>
 
@@ -34,29 +34,30 @@
           <h2>Contact Form</h2>
           <form action="" method="get">
             <div class="form-row">
+              <label for="userEmail">Email</label>
 
-            
-             <label for="userEmail">Email</label>
-
-             <input
-              type="email"
-              name="email"
-              id="userEmail"
-              placeholder="example@gmail.com" />
-           </div>
+              <input
+                type="email"
+                name="email"
+                id="userEmail"
+                placeholder="example@gmail.com"
+              />
+            </div>
             <label for="contactName">Name</label>
-              
-            <input type="text"
-                    id="contactName"
-                    name="name"
-                    placeholder="YourName"/>
+
+            <input
+              type="text"
+              id="contactName"
+              name="name"
+              placeholder="YourName"
+            />
             <button id="my-button" type="submit">Contact me</button>
           </form>
         </section>
         <section>Second Menu</section>
       </div>
       <div id="main">
-        <div class="page">
+        <div id="skills" class="page">
           <h2>Skills</h2>
           <ul>
             <li class="favorite">html</li>
@@ -65,73 +66,69 @@
           </ul>
         </div>
 
-        <div id="languages" class="page" style=>
+        <div id="languages" class="page">
           <h2>Known Languages</h2>
-          
-            <table>
-              <tr>
-                <th>Language</th>
-                <th>Level</th>
-              </tr>  
 
-              <tr>
-                <td>Romanian</td>
-                <td>Native proficiency</td>
-              </tr>
-              <tr>
-               <td>English</td>
-               <td>Professional working proficiency</td>
-              </tr>
-              <tr>
-                <td>German</td>
-                <td>Professional working proficiency</td>
-              </tr>
-            </table>
-        
-          </div>
+          <table>
+            <tr>
+              <th>Language</th>
+              <th>Level</th>
+            </tr>
 
-        <div class="page">
+            <tr>
+              <td>Romanian</td>
+              <td>Native proficiency</td>
+            </tr>
+            <tr>
+              <td>English</td>
+              <td>Professional working proficiency</td>
+            </tr>
+            <tr>
+              <td>German</td>
+              <td>Professional working proficiency</td>
+            </tr>
+          </table>
+        </div>
+
+        <div id="projects" class="page">
           <h2>Projects</h2>
           <div>
-            <p>
-              Work in progress ...
-            </p> 
+            <p>Work in progress ...</p>
           </div>
         </div>
 
-        <div class="page">
+        <div id="home" class="page">
           <h2>Home</h2>
           <h3 class="title">About</h3>
           <div>
             <p>
-              Hi I'm Dana and I am passionate about all 
-              things beautiful and crafty.
+              Hi I'm Dana and I am passionate about all things beautiful and
+              crafty.
             </p>
             <p>
-              My strongest point is creativity and my biggest pleasure 
-             is to create and design new things.
-             Since early age I have been passionate about art.
-             I have studied art in college which broadened up my horizons and 
-             developed my taste for beauty.
-             <br> My love for aesthetique,
-            creativity and daintiness is very well reflected in all I do.
+              My strongest point is creativity and my biggest pleasure is to
+              create and design new things. Since early age I have been
+              passionate about art. I have studied art in college which
+              broadened up my horizons and developed my taste for beauty.
+              <br />
+              My love for aesthetique, creativity and daintiness is very well
+              reflected in all I do.
             </p>
- 
-            
           </div>
         </div>
       </div>
     </section>
     <footer>
-      <p style="text-align: center;"  >
+      <p style="text-align: center">
         <a target="_blank" href="https://github.com/vlasdana">GitHub</a>
-         | 
-        <a target="_blank" href="https://www.linkedin.com/in/dana-vlas-141b2a244/">LinkedIn</a>
+        |
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/dana-vlas-141b2a244/"
+          >LinkedIn</a
+        >
       </p>
-      <p id="Year">2022
-      </p>
-     
-     
+      <p id="Year">2022</p>
     </footer>
 
     <script src="index.js"></script>

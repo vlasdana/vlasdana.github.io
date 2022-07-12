@@ -146,6 +146,7 @@ li {
 }
 
 .page {
+  display: none;
   background: rgb(239, 235, 235);
   border-radius: 0.8rem;
   margin-bottom: 1.6rem;
@@ -207,6 +208,8 @@ footer a {
   cursor: pointer;
   text-decoration-style: solid;
   text-decoration-thickness: auto;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 #Year {
   /* color: rgb(227, 81, 144); */

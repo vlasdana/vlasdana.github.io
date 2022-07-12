@@ -1,7 +1,7 @@
 console.info(2);
 console.debug(22 + 3);
 console.warn(6 * 3 - 10);
-console.error("app started");
+console.error("started");
 
 var myName = "Dana";
 var age = 19;
@@ -19,3 +19,24 @@ console.info(mottoElement);
 console.warn(mottoElement.innerHTML);
 
 mottoElement.innerHTML += " & " + jobTitle;
+
+function showHomePage() {
+  document.getElementById("home").style.display = "block";
+}
+
+function showSkillsPage() {
+  console.warn("skills");
+  document.getElementById("home").style.display = "none";
+  document.getElementById("skills").style.display = "block";
+}
+
+function showProjectsPage() {
+  document.getElementById("skills").style.display = "none";
+  document.getElementById("projects").style.display = "block";
+}
+function showLanguagesPage() {
+  document.getElementById("projects").style.display = "none";
+  document.getElementById("languages").style.display = "block";
+}
+
+showHomePage();
