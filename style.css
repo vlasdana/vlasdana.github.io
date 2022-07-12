@@ -215,5 +215,6 @@ footer a {
   /* color: rgb(227, 81, 144); */
   color: #d7c6aa;
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
+  margin: 2px;
 }
