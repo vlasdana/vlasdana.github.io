@@ -15,44 +15,42 @@ age = 31;
 var jobTitle = "<span>Ofice Assistent</span>";
 var mottoElement = document.getElementById("motto");
 
-console.info(mottoElement);
-console.warn(mottoElement.innerHTML);
-
 mottoElement.innerHTML += " & " + jobTitle;
 
 function hidePage(id) {
   console.info("hide", id);
   document.getElementById(id).style.display = "none";
 }
+
 function showPage(id) {
   console.warn("show", id);
   document.getElementById(id).style.display = "block";
 }
-function showHomePage() {
+
+function hideAllPages() {
   showPage("home");
   hidePage("skills");
   hidePage("projects");
   hidePage("languages");
 }
 
+function showHomePage() {
+  hideAllPages();
+  showPage("home");
+}
+
 function showSkillsPage() {
+  hideAllPages();
   showPage("skills");
-  hidePage("home");
-  hidePage("projects");
-  hidePage("languages");
 }
 
 function showProjectsPage() {
+  hideAllPages();
   showPage("projects");
-  hidePage("skills");
-  hidePage("home");
-  hidePage("languages");
 }
 function showLanguagesPage() {
+  hideAllPages();
   showPage("languages");
-  hidePage("projects");
-  hidePage("home");
-  hidePage("skills");
 }
 
 showHomePage();
