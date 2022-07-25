@@ -1,7 +1,7 @@
 console.info(2);
 console.debug(22 + 3);
 console.warn(6 * 3 - 10);
-console.error("started");
+console.warn("started");
 
 var myName = "Dana";
 var age = 19;
@@ -37,4 +37,17 @@ function showPage(nextPage) {
   activePage = nextPage;
 }
 
+function initEvents() {
+  document
+    .getElementById("top-menu-bar")
+    .addEventListener("click", function (e) {
+      if (e.target.matches("a")) {
+        var id = e.target.id.substring(5);
+        console.warn("click pe menu", id);
+        showPage(id);
+      }
+    });
+}
+
 showPage(activePage);
+initEvents();
