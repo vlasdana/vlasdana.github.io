@@ -32,8 +32,10 @@ var activePage = "home";
 function showPage(nextPage) {
   hide(activePage);
   show(nextPage);
-  document.getElementById("menu-" + activePage).classList.remove("active");
-  document.getElementById("menu-" + nextPage).classList.add("active");
+  document
+    .querySelector(`a[data-page=${activePage}]`)
+    .classList.remove("active");
+  document.querySelector(`a[data-page=${nextPage}]`).classList.add("active");
   activePage = nextPage;
 }
 
@@ -42,8 +44,7 @@ function initEvents() {
     .getElementById("top-menu-bar")
     .addEventListener("click", function (e) {
       if (e.target.matches("a")) {
-        var id = e.target.id.substring(5);
-        console.warn("click pe menu", id);
+        var id = e.target.getAttribute("data-page");
         showPage(id);
       }
     });
