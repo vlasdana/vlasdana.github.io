@@ -144,6 +144,12 @@ li {
   border-radius: 00.5rem;
   padding: border 0.3em;
 }
+#top-menu-bar a.active {
+  color: rgb(159, 118, 69);
+  background: #fff;
+  border-radius: 00.5rem;
+  padding: border 0.3em;
+}
 
 .page {
   display: none;

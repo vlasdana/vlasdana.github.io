@@ -27,16 +27,14 @@ function show(id) {
   document.getElementById(id).style.display = "block";
 }
 
-function hideAllPages() {
-  hide("home");
-  hide("skills");
-  hide("projects");
-  hide("languages");
+var activePage = "home";
+
+function showPage(nextPage) {
+  hide(activePage);
+  show(nextPage);
+  document.getElementById("menu-" + activePage).classList.remove("active");
+  document.getElementById("menu-" + nextPage).classList.add("active");
+  activePage = nextPage;
 }
 
-function showPage(id) {
-  hideAllPages();
-  show(id);
-}
-
-showPage("home");
+showPage(activePage);
